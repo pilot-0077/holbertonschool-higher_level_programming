@@ -1,3 +1,3 @@
-#!/usr/bin/python3
-def add(a, b):
-    return (a + b)
+**Overview:**
+
+This directory consists of scripts which were written in Python language and contains more data structures.
