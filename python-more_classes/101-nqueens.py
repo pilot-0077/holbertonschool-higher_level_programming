@@ -10,10 +10,13 @@ def print_solution(board):
 
 
 def is_safe(board, row, col):
-    for i in range(row):
-        if board[i] == col or \
-           board[i] - i == col - row or \
-           board[i] + i == col + row:
+    for r in range(row):
+        c = board[r]
+        if c == col:
+            return False
+        if (c - r) == (col - row):
+            return False
+        if (c + r) == (col + row):
             return False
     return True
 
